@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menumobile").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex'){
+                    document.querySelector(".menu nav ul").style.display = 'none' ;
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex'
+                }
+            })
+        }
+    </script>
+    <title>Landing page</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="">
+                    <h1>Vex</h1>
+                </a>
+            </div>
+            <div class="menu">
+                <nav>
+                    <div class="menumobile">
+                        <div class="mm_mobile"></div>
+                        <div class="mm_mobile"></div>
+                        <div class="mm_mobile"></div>
+                    </div>
+                    <ul>
+                        <li class="active"><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">SERVICES</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </nav>    
+            </div>    
+        </div>
+    </header>
+    <section>
+        <div class="row">
+            <div class="image">
+                <img src="assets/images/watch.png" alt="watch" />
+            </div>
+            <div class="conte">
+                <div class="text_principal">
+                    <h1>Belive in Technology, Make the change</h1>
+                </div>
+                <div class="text_second">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, modi fugit in veritatis labore perferendis. Minima hic at, nostrum nihil!</p>
+                </div>
+                <div class="boton">
+                    <a href="" role="button">Buy Now With $199</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
